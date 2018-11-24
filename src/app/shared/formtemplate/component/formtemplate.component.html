@@ -1,0 +1,10 @@
+<!-- <div class="row" *ngFor="let g of formdata"> -->
+<div [ngSwitch]="formdata.type">
+  <div class="col-sm-4" *ngSwitchCase="'text'">
+    <label>{{ formdata.label }}</label>
+    <!-- <input type="text" [formControlName]="formdata.control"> -->
+    <!-- <app-field-error-display [displayError]="globalformservice.isFieldValid(form,formControl)" errorMsg="This Field Is Required"> -->
+    <!-- </app-field-error-display> -->
+  </div>
+</div>
+<!-- </div> -->
